@@ -9,7 +9,6 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
-import java.util.TimeZone;
 
 /**
  * DATE 时间工具类
@@ -435,36 +434,6 @@ public class DateUtils extends org.apache.commons.lang3.time.DateUtils {
         GregorianCalendar gregorianCalendar = new GregorianCalendar();
         gregorianCalendar.setTime(date);
         return gregorianCalendar.get(Calendar.DAY_OF_YEAR);
-    }
-
-
-
-
-    public static void main(String[] args) {
-//        GregorianCalendar gregorianCalendar = new GregorianCalendar();
-//
-//        log.info(String.valueOf(gregorianCalendar.getTimeZone()));
-//        gregorianCalendar.setTime(new Date());
-//        log.info(String.valueOf(gregorianCalendar.get(Calendar.YEAR)));
-//        log.info(String.valueOf(gregorianCalendar.get(Calendar.MONTH)));
-//        log.info(String.valueOf(gregorianCalendar.get(Calendar.DATE)));
-//        log.info(String.valueOf(gregorianCalendar.get(Calendar.DAY_OF_WEEK)));
-//        log.info(String.valueOf(gregorianCalendar.get(Calendar.HOUR_OF_DAY)));
-//        log.info(String.valueOf(gregorianCalendar.get(Calendar.MINUTE)));
-//        log.info(String.valueOf(gregorianCalendar.get(Calendar.SECOND)));
-//        log.info(String.valueOf(gregorianCalendar.get(Calendar.MILLISECOND)));
-//
-//        gregorianCalendar.set(gregorianCalendar.get(Calendar.YEAR),gregorianCalendar.get(Calendar.MONTH),gregorianCalendar.get(Calendar.DATE),
-//                23,59,59);
-//        log.info(parseDateToStr(YYYY_MM_DD_HH_MM_SS,gregorianCalendar.getTime()));
-
-//        log.info(getDayOfWeek(getNowDate()).toString());
-
-//        log.info(dateTimeFormatYMDHMS(getMonthStart(getNowDate())));
-//        log.info(dateTimeFormatYMDHMS(getMonthEnd(getNowDate())));
-
-//        log.info(dateTimeFormatYMDHMS(getDateAdd(23)));
-//        log.info(dateTimeFormatYMDHMS(getDateDel(10)));
     }
 
 }

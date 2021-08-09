@@ -1,5 +1,7 @@
 package com.lzx.peachutil.utils.localDatetime;
 
+import lombok.extern.slf4j.Slf4j;
+
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.Period;
@@ -45,6 +47,7 @@ import java.util.Date;
  * @author lizhixin
  * @date 2021/8/9 11:28
  */
+@Slf4j
 public class LocalDateTimeUtils {
 
     public static String FORMAT_Y_M_D = "yyyy-MM-dd";
