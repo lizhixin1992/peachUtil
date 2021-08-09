@@ -1,6 +1,7 @@
 package com.lzx.peachutil;
 
 import com.lzx.peachutil.utils.http.OkHttpUtils;
+import okhttp3.Call;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -78,6 +79,22 @@ class PeachUtilApplicationTests {
 //                .async();
 //        System.out.println(sync3);
 
+
+        builder.url("https://www.baidu.com")
+                .addParam("a", "12121")
+                .addHeader("Content-Type", "application/json; charset=utf-8")
+                .post(false)
+                .async(new OkHttpUtils.ICallBack() {
+                    @Override
+                    public void onSuccessful(Call call, String data) {
+                        System.out.println("test success");
+                    }
+
+                    @Override
+                    public void onFailure(Call call, String errorMsg) {
+                        System.out.println("test error");
+                    }
+                });
     }
 
 }
